@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="dist/main.min.css">
+</head>
+
+<body>
+    <div id="container">
+        <h1>Solitaire</h1>
+        <div class="menu">
+            pattern: <select id="patterns" onchange="change_pattern();"></select>
+            <span class="item" id="start_timer" onclick="start_timer();">start timer</span> |
+            <span class="item" id="stop_timer" onclick="stop_timer();">stop timer</span> |
+            <span class="item disabled" id="undo" onclick="undo();">undo</span> |
+            <span class="item" id="reset" onclick="reset();">reset</span> |
+            <span class="item" id="replay" onclick="replay();">replay</span>
+            <span class="item" id="timer"></span>
+            <a href="https://github.com/ask5/ask5.github.io" class="source">source code</a>
+        </div>
+        <div id="main-section">
+            <div id="board-container"></div>
+        </div>
+        <div id="info-section">
+            <div id="log-container">
+                <ol id="log">
+                </ol>
+            </div>
+        </div>
+    </div>
+    <script src="dist/solitaire.js"></script>
+</body>
+
+</html>
