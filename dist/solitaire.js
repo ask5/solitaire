@@ -320,7 +320,6 @@ class Peg {
     }
 
     write(log, class_name = null) {
-        this.count++;
         var li = document.createElement("li");
         
         if(class_name)
