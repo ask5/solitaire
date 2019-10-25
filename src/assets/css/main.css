@@ -8,6 +8,10 @@ span.disabled{
     color: gray;
 }
 
+a {
+    color: white;
+}
+
 #timer{
     float: right;
     color: yellow;
@@ -31,6 +35,22 @@ h1 {
 
 .menu span.item {
    cursor: pointer;
+   text-decoration: underline;
+}
+
+#rules{
+    padding: 1em;
+    background-color: gray;
+    border: 2px double white;
+}
+
+#rules span{
+    float: right;
+    cursor: pointer;
+}
+
+.hide{
+    display: none;
 }
 
 .menu .source{

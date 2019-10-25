@@ -31,6 +31,14 @@ class Board {
     this.container.appendChild(this.layout.panel.element);
   }
 
+  show(){
+    this.container.classList.remove('hide');
+  }
+
+  hide(){
+    this.container.classList.add('hide');
+  }
+
   make_move(row, column) {
 
     let move = null;
@@ -356,6 +364,17 @@ class Peg {
         ]
     },
     {
+        'name': 'Triangular',
+        'diagonal_allowed': true,
+        'cells': [
+            [null, null, null, null, 0],
+            [null, null, null, 1, 1],
+            [null, null, 1, 1, 1],
+            [null, 1, 1, 1, 1],
+            [1, 1, 1, 1, 1]
+        ]
+    },
+    {
         'name': 'Wiegleb',
         'diagonal_allowed': false,
         'cells': [
@@ -397,17 +416,6 @@ class Peg {
             [null, null, 1, 1, 1, 1, 1, null, null],
             [null, null, null, 1, 1, 1, null, null, null],
             [null, null, null, null, 1, null, null, null, null],
-        ]
-    },
-    {
-        'name': 'Triangle',
-        'diagonal_allowed': true,
-        'cells': [
-            [null, null, null, null, 0],
-            [null, null, null, 1, 1],
-            [null, null, 1, 1, 1],
-            [null, 1, 1, 1, 1],
-            [1, 1, 1, 1, 1]
         ]
     }
 ];class Timer {
@@ -451,6 +459,7 @@ class Peg {
 ;let patterns_dropdown = document.getElementById("patterns");
 let board_container = document.getElementById("board-container")
 let log_container = document.getElementById("log");
+let rules_container = document.getElementById("rules");
 let timer_span = document.getElementById("timer");
 let start_timer_link = document.getElementById("start_timer");
 let undo_link = document.getElementById("undo");
@@ -529,10 +538,21 @@ function undo() {
 
 function reset() {
     board.reset();
+    hide_rules();
     stop_timer();
     timer_span.innerText = "";
     undo_link.classList.add('disabled');
     logger.clear();
+}
+
+function show_rules() {
+    board.hide();
+    rules_container.classList.remove('hide');
+}
+
+function hide_rules() {
+    rules_container.classList.add('hide');
+    board.show();
 }
 
 function replay() {

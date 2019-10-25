@@ -1,6 +1,7 @@
 let patterns_dropdown = document.getElementById("patterns");
 let board_container = document.getElementById("board-container")
 let log_container = document.getElementById("log");
+let rules_container = document.getElementById("rules");
 let timer_span = document.getElementById("timer");
 let start_timer_link = document.getElementById("start_timer");
 let undo_link = document.getElementById("undo");
@@ -79,10 +80,21 @@ function undo() {
 
 function reset() {
     board.reset();
+    hide_rules();
     stop_timer();
     timer_span.innerText = "";
     undo_link.classList.add('disabled');
     logger.clear();
+}
+
+function show_rules() {
+    board.hide();
+    rules_container.classList.remove('hide');
+}
+
+function hide_rules() {
+    rules_container.classList.add('hide');
+    board.show();
 }
 
 function replay() {

@@ -31,6 +31,14 @@ class Board {
     this.container.appendChild(this.layout.panel.element);
   }
 
+  show(){
+    this.container.classList.remove('hide');
+  }
+
+  hide(){
+    this.container.classList.add('hide');
+  }
+
   make_move(row, column) {
 
     let move = null;
