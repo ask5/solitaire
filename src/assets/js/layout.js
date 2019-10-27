@@ -153,6 +153,6 @@ class Hole {
 class Peg {
     constructor() {
         this.element = document.createElement("div");
-        this.element.setAttribute('class', 'peg black');
+        this.element.setAttribute('class', 'peg blue');
     }
 }
