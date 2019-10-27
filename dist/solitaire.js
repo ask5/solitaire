@@ -520,7 +520,7 @@ function prepare_move_log(move) {
 
     let log = from_row.toString() + from_column.toString() +
         " to " + to_row.toString() + to_column.toString() + "; " +
-        middle_row.toString() + middle_column.toString() + " eliminited.";
+        middle_row.toString() + middle_column.toString() + " eliminated.";
 
     return log;
 }
