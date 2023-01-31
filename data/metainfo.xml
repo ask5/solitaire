@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>com.github.ask5.solitaire</id>
+
+  <name>Peg Solitare</name>
+  <summary>Peg Solitare app</summary>
+
+  <metadata_license>CC-BY-4.0</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+
+  <description>
+    <p>
+      Peg solitaire, Solo Noble or simply Solitaire is a board game for one player involving movement of pegs on a board with holes. 
+      Some sets use marbles in a board with indentations. 
+      The game is known as solitaire in Britain and as peg solitaire in the US where 'solitaire' is now the common name for patience. 
+      It is also called Brainvita in India, where sets are sold commercially under this name.
+    </p>
+  </description>
+
+  <launchable type="desktop-id">com.github.ask5.solitaire.desktop</launchable>
+</component>
