@@ -418,17 +418,19 @@ class Peg {
         ]
     },
   {
-  "name": "Star",
-  "diagonal_allowed": true,
-  "cells": [
-    [null, null, 1, null, null],
-    [null, null, 1, null, null],
-    [1, 1, 1, 1, 1],
-    [null, 1, 1, 1, null],
-    [null, null, 1, null, null]
-  ]
+'name': 'Checkerboard',
+'diagonal_allowed': false,
+'cells': [
+[1, null, 1, null, 1, null, 1, null],
+[null, 1, null, 1, null, 1, null, 1],
+[1, null, 1, null, 1, null, 1, null],
+[null, 1, null, 1, null, 1, null, 1],
+[1, null, 1, null, 1, null, 1, null],
+[null, 1, null, 1, null, 1, null, 1],
+[1, null, 1, null, 1, null, 1, null],
+[null, 1, null, 1, null, 1, null, 1]
+]
 }
-
 ];class Timer {
     constructor(span) {
         this.span = span;
