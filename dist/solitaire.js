@@ -425,7 +425,7 @@ class Peg {
 [null, 1, null, 1, null, 1, null, 1],
 [1, null, 1, null, 1, null, 1, null],
 [null, 1, null, 1, null, 1, null, 1],
-[1, null, 1, null, 1, null, 1, null],
+[1, null, 1, null, 0, null, 1, null],
 [null, 1, null, 1, null, 1, null, 1],
 [1, null, 1, null, 1, null, 1, null],
 [null, 1, null, 1, null, 1, null, 1]
