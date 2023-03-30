@@ -418,7 +418,7 @@ class Peg {
         ]
     },
   {
-'name': 'Checkerboard',
+'name': 'Checkerboard (by ChatGPT)',
 'diagonal_allowed': false,
 'cells': [
 [1, null, 1, null, 1, null, 1, null],
@@ -430,7 +430,19 @@ class Peg {
 [1, null, 1, null, 1, null, 1, null],
 [null, 1, null, 1, null, 1, null, 1]
 ]
+},
+{
+  'name': 'Cross (by ChatGPT)',
+  'diagonal_allowed': false,
+  'cells': [
+    [null, null, 1, null, null],
+    [null, null, 1, null, null],
+    [1, 1, 0, 1, 1],
+    [null, null, 1, null, null],
+    [null, null, 1, null, null]
+  ]
 }
+ 
 ];class Timer {
     constructor(span) {
         this.span = span;
